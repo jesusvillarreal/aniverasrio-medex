@@ -1,0 +1,81 @@
+/* La seccion se llama "beneficios" */
+.beneficios table, .tarifario table {
+    margin         : 0 auto;
+    width          : 90%;
+    border-collapse: collapse;
+}
+
+.beneficios tbody th, .tarifario tbody th {
+    position: sticky ;
+    position: -webkit-sticky ;
+    top     : 80px;
+}
+
+
+.beneficios td.empty {
+    padding: 0 10px;
+}
+
+.beneficios table tr td {
+    padding  : 0.4em 1em;
+    font-size: var(--normal-font-size);
+}
+
+.beneficios table tr th {
+    padding                : 1em 0.5em;
+    font-size              : 1.125em;
+    background             : var(--color-alt);
+    color                  : #fff;
+    z-index                : var(--z-normal);
+    border-top-left-radius : var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+.beneficios .titulo-azul {
+    background-color: #3E87C7;
+}
+
+.beneficios .subtitle-table {
+    border-bottom: 2px solid red;
+    padding      : 0.8em 1em .4em;
+    font-weight  : 700;
+}
+
+.beneficios .subtitle-table-small {
+    text-align   : center;
+    font-size    : var(--small-font-size);
+    border-bottom: 2px solid red;
+}
+
+.beneficios .list-detalles {
+    font-size : var(--small-font-size);
+    text-align: center;
+    opacity   : 0.8;
+}
+
+
+/* Tarifario  */
+
+.tarifario th {
+    padding         : 20px 0;
+    background-color: var(--primary-color);
+    font-size       : 1.25rem;
+    color           : #fff;
+
+}
+
+.tarifario td {
+    text-align: center;
+    padding   : 20px 0;
+}
+
+.tarifario tr:nth-child(even) {
+background-color: #d8ecfd;
+}
+
+.tarifario td:first-child {
+    font-weight: 700;
+  }
+
+
+

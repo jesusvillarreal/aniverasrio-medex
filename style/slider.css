@@ -1,0 +1,159 @@
+section.slider button a {
+    color          : #fff;
+    text-decoration: none;
+}   
+
+section.slider {
+    /* Margen que se le da por la cabecera fixed */
+    margin-top: var(--header-height);
+}
+
+.slider h1, .slider h2 {
+    padding-bottom: 1rem;
+    margin-bottom : 1rem;
+}
+
+.slider h1:after,.slider h2:after {
+    content: '';
+    background: #113f8b;
+    position: absolute;
+    width: 100px;
+    height: 8px;
+    display: block;
+    margin-top: 12px;
+}
+
+.slider p {
+    line-height: 29px;
+}
+
+.slider h2, .slider p {
+    color     : #fff;
+    text-align: left;
+}
+
+.slider .txt-slider{
+    font-size: var(--h5-font-size);
+}
+
+.slider .container-pill {
+    display: flex;
+}
+
+.slider .slider-pill {
+    background   : #fff;
+    border       : 1px solid var(--color-body);
+    color        : var(--color-body);
+    padding      : 4px 40px;
+    border-radius: var(--border-radius);
+    font-size    : var(--small-font-size);
+    margin-bottom: 20px;
+    font-weight  : 700;
+}
+
+.owl-stage-outer .owl-item.active.center {
+    background-color: rgb(12 12 12 / 0%);
+}
+
+.slider .slide-1 {
+    background-image : url("/img/images/slider/bck-slider01.jpg");
+    background-repeat: no-repeat;
+    background-size  : cover;
+    padding          : 28px 0px;
+    height           : 520px;
+    
+}
+
+.slider-img, .img-up:hover {
+    width    : 100%;
+    animation: Latidos ease-in 1s infinite alternate;
+}
+
+@keyframes Latidos {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.04);
+    }
+}
+
+
+.slide-1 .img {
+    width : 42%!important;
+    margin: auto;
+}
+
+
+.slide-2 {
+    background-image : url("/img/images/slider/bck-slider02.jpg");
+    background-repeat: no-repeat;
+    background-size  : cover;
+    padding          : 28px 0px;
+    height           : 520px;
+}
+.slide-3 {
+    background-image : url("/img/images/slider/bck-slider03.jpg");
+    background-repeat: no-repeat;
+    background-size  : cover;
+    padding          : 28px 0px;
+    height           : 520px;
+}
+.slide-4 {
+    background-image : url("/img/images/slider/bck-slider01.jpg");
+    background-repeat: no-repeat;
+    background-size  : cover;
+    padding          : 28px 0px;
+    height           : 520px;
+}
+.slide-5 {
+    background-image : url("/img/images/slider/bck-slider02.jpg");
+    background-repeat: no-repeat;
+    background-size  : cover;
+    padding          : 28px 0px;
+    height           : 520px;
+}
+
+/* Capa de color, al contenido que se pondra encima se agregar position: relative; */
+.slider .slide-2:before, .slide-1:before, .slide-3:before, .slide-4:before {
+    content         : '';
+    position        : absolute;
+    background-color: #000;
+    top             : 0;
+    right           : 0;
+    bottom          : 0;
+    left            : 0;
+    opacity         : .5;
+}
+
+.slider .container-slider {
+    position: relative;
+}
+
+
+
+/* Flechas  */
+
+.owl-prev, .owl-next {
+    position   : absolute;
+    top        : 40%;
+    transform  : translate(-50%);
+    color      : #fff!important;
+    font-size  : 60px!important;
+    font-weight: bolder;
+    background : none!important;
+    outline    : 0;
+}
+.owl-prev {
+    left: 1%;
+}
+
+.owl-next {
+    right: 1%;
+}
+
+@media screen and (max-width: 425px) {
+    .owl-prev, .owl-next {
+        display: none;
+    }
+}
