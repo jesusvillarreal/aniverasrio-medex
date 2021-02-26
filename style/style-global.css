@@ -164,6 +164,10 @@ ul {
   padding-bottom: 100px;
 }
 
+.p-r1{
+  padding-right: 2em;
+}
+
 .barra-colores {
   padding-bottom: 32px;
   padding-top   : 16px;
@@ -419,8 +423,9 @@ section.tira-intermedia:after {
     60%,
     var(--secundary-color-alt)
   );
-  padding: 50px 0;
-  color  : #fff;
+  padding   : 40px 0;
+  color     : #fff;
+  margin-top: 40px
 }
 .tira-container,
 .covid-contenido {
@@ -507,7 +512,7 @@ section.beneficios .subtitle {
 
 /* incluyen  */
 
-.incluyen .subtitle {
+.incluyen .subtitle, .servicios .subtitle {
   width       : 60%;
   margin-left : auto;
   margin-right: auto;
@@ -687,3 +692,57 @@ section.lugares .subtitle, section.preguntas .subtitle {
 /* Fin accordion  */
 
 
+/* Introduccion */
+
+section.introduccion {
+  background-color: #8396ad26;
+}
+
+.owl-dots {
+  display: none!important;
+}
+
+.video-responsive {
+  width : 100%;
+  height: 100%;
+}
+.video-responsive video{
+  border : 2px solid #2a3b4754;
+  outline: none;
+}
+
+.video {
+  width : 550px;
+  height: 320px;
+}
+
+.ul-detalles {
+  font-size    : var(--small-font-size);
+  line-height  : 28px;
+  padding-right: 20px;
+}
+
+section.introduccion .panel{
+  background   : #fff;
+  border-radius: .5rem;
+
+}
+
+section.introduccion .contenido {
+  padding: 20px 0;
+}
+
+section.tira-section .img-tira {
+  margin-top   : -150px;
+  margin-bottom: -40px;
+}
+
+section.tira-section .tira-detalle {
+  justify-content: center;
+
+}
+
+/* Texto desplegable bajo video*/
+section.introduccion .serv-list {
+  font-size: var(--h5-font-size);
+}

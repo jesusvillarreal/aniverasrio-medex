@@ -44,6 +44,7 @@
               width="40%"
               alt="Logo Medex"
               class="header-logo"
+              loading="lazy"
             />
           </a>
           <button class="header-boton button" id="open-modal">Solicitar Información</button>
@@ -53,7 +54,79 @@
 
     <main>
         <!-- Modal de formulario -->
-  
+        <div class="modal " id="modal">
+          <div class="content">
+              <div class="container-form " >
+                  <label for="show" class="close-btn fas fa-times" id="close-modal" ></label>
+                  
+                  <!-- Formuarlio -->
+                  <h4>Solicitar información</h4>
+                  <p class="subtitulo-formulario">Desde hace 40 años, impulsamos tu negocio y cuidamos el activo más importante: tus colaboradores. 
+                    <br><br>
+                  Inscríbete y nos contactaremos a la brevedad.
+                  </p>
+                  <form action="#">
+                      <div class="data">
+                          <label class="modal-label " for="">Su nombre</label>
+                          <input 
+                          class="input-formulario" 
+                          placeholder="Incluye tu nombre y apellidos"
+                          type="text" 
+                          value="" 
+                          name="nom_paci"
+                          id="nom_paci"
+                          minlength="6"
+                          minlength="6"
+                          required>
+                      </div>
+      
+                      <div class="data">
+                          <label class="modal-label" for="">Celular o WhatsApp</label>
+                          <input 
+                          class="input-formulario" 
+                          placeholder="Ingresa tu número de celular"
+                          type="number" 
+                          value=""
+                          name="num_tele"
+                          
+                          maxlength="11"
+                          required>
+                      </div>
+                 
+                      <div class="data">
+                          <label class="modal-label" for="">Tu correo electrónico</label>
+                          <input 
+                          class="input-formulario" 
+                          placeholder="Ingresa tu correo electronico"
+                          type="email" 
+                          value="" 
+                          name="des_mail" 
+                          id="des_mail" 
+                          required>
+                      </div>
+
+                      <div class="data">
+                        <label class="modal-label" for="">Nombre de la empresa</label>
+                        <input 
+                        class="input-formulario" 
+                        placeholder="Ingresa tu razón social"
+                        type="text" 
+                        value="" 
+                        name="des_nomEmpr" 
+                        id="des_nomEmpr" 
+                        required>
+                    </div>
+    
+      
+                      <!-- <div class="terms">
+                          <input type="checkbox" name="terms" onclick="disableSending()">
+                          <label for="terms">Acepto recibir información de promociones.</label>
+                      </div> -->
+                      <button type="submit" class="formulario-submit button dark" value="Enviar" >Enviar datos</button>
+                  </form>
+              </div>
+          </div>
+      </div>
         <!-- Fin Modal formulario -->
   
         <!-- Slider -->
@@ -64,7 +137,7 @@
               <div class="item flex slide-1">
                 <div class="container flex container-slider">
                   <div class="col-2 slider-img">
-                    <img src="/img/images/slider/img-01.png" alt="" />
+                    <img src="/img/images/slider/img-01.png" alt="" loading="lazy"/>
                   </div>
                   <div class="col-2">
                     
@@ -76,89 +149,13 @@
                       La implementación del Sistema de Gestión de Seguridad y Salud en el Trabajo, ayudará a las organizaciones en la prevención de los riesgos en los centros de trabajo, <strong>mejorar la calidad de vida</strong> de los trabajadores y a estar <strong>preparadas frente a emergencias</strong>.  
                     </p>
                     <div class="flex">
-                      <button class="button left">Saber más</button>
+                      <button class="button left"><a href="#inicio"> Saber más</a></button>
                     </div>
                   </div>
                 </div>
               </div>
   
-              <!-- Slider 2  -->
-              <div class="item flex slide-2">
-                <div class="container flex container-slider">
-                  
-                  <div class="col-2">
-                    
-                    <h2>Evaluación Médica Ocupacional</h2>
-                    <p class="slider-txt">
-                      Permiten el diagnóstico oportuno de alguna condición o enfermedad que pudiese estar relacionada con el trabajo.
-                    </p>
-                    <p class="slider-txt">
-                      El objetivo de estas evaluaciones es conocer el estado de salud y/o aptitud del individuo antes de emplearlo, durante o tras la culminación del contrato.
-                    </p>
-                    <div class="flex">
-                      <button class="button left">Saber más</button>
-                    </div>
-                  </div>
-                  <div class="col-2 slider-img">
-                    <img
-                      src="/img/images/slider/img-02.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slider 3  -->
-              <div class="item flex slide-3">
-                <div class="container flex container-slider">
-                
-                  <div class="col-2">
-                    
-                    <h2>Auditoria en Salud Ocupacional</h2>
-                    <p class="slider-txt">
-                      No encargamos en la revisión de su documentación, el planeamiento del proceso, trabajo de campo y la emisión del informe final correspondiente que contenga, entre otros aspectos.
-                    </p>
-                    <p class="slider-txt">
-                      Las auditorías periódicas permiten comprobar, la prevención de riesgos laborales, la seguridad y salud de los trabajadores; y si son bien aplicadas y si son eficaces.
-                    </p>
-                    <div class="flex">
-                      <button class="button left">Saber más</button>
-                    </div>
-                  </div>
-                  <div class="col-2 slider-img">
-                    <img
-                      src="/img/images/slider/img-05.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slider 4  -->
-              <div class="item flex slide-4">
-                <div class="container flex container-slider">
-                  <div class="col-2 slider-img">
-                    <img
-                      src="/img/images/slider/img-06.png"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-2">
-                   
-                    <h2>Seguimiento y Resultados Online</h2>
-                    <p class="slider-txt">
-                      Todos los servicios ofrecidos en nuestros locales cuenta con
-                      una amplia y cómoda infraestructura y tecnología avanzada.
-                    </p>
-                    <p class="slider-txt">
-                      A su vez contamos con un Staff médico calificado, que
-                      brindan una atención médica personalizada.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Slider 5  -->
+              <!-- Acreditado por Digesa - Slider 2  -->
               <div class="item flex slide-2">
                 <div class="container flex container-slider">
                 
@@ -180,23 +177,165 @@
                     <img
                       src="/img/images/slider/acreditado.png"
                       alt=""
+                      loading="lazy"
                     />
                   </div>
                 </div>
               </div>
+
+              <!-- Slider 2  -->
+              <div class="item flex slide-2">
+                <div class="container flex container-slider">
+                  
+                  <div class="col-2">
+                    
+                    <h2>Evaluación Médica Ocupacional</h2>
+                    <p class="slider-txt">
+                      Permiten el diagnóstico oportuno de alguna condición o enfermedad que pudiese estar relacionada con el trabajo.
+                    </p>
+                    <p class="slider-txt">
+                      El objetivo de estas evaluaciones es conocer el estado de salud y/o aptitud del individuo antes de emplearlo, durante o tras la culminación del contrato.
+                    </p>
+                    <div class="flex">
+                      <button class="button left"><a href="#medico-ocupacional">Saber más</a></button>
+                    </div>
+                  </div>
+                  <div class="col-2 slider-img">
+                    <img
+                      src="/img/images/slider/img-02.png"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slider 3  -->
+              <div class="item flex slide-3">
+                <div class="container flex container-slider">
+                
+                  <div class="col-2">
+                    
+                    <h2>Auditoria en Salud Ocupacional</h2>
+                    <p class="slider-txt">
+                      No encargamos en la revisión de su documentación, el planeamiento del proceso, trabajo de campo y la emisión del informe final correspondiente que contenga, entre otros aspectos.
+                    </p>
+                    <p class="slider-txt">
+                      Las auditorías periódicas permiten comprobar, la prevención de riesgos laborales, la seguridad y salud de los trabajadores; y si son bien aplicadas y si son eficaces.
+                    </p>
+                    <div class="flex">
+                      <!-- <button class="button left">Saber más</button> -->
+                    </div>
+                  </div>
+                  <div class="col-2 slider-img">
+                    <img
+                      src="/img/images/slider/img-05.png"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slider 4  -->
+              <div class="item flex slide-4">
+                <div class="container flex container-slider">
+                  <div class="col-2 slider-img">
+                    <img
+                      src="/img/images/slider/img-06.png"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="col-2">
+                   
+                    <h2>Seguimiento y Resultados Online</h2>
+                    <p class="slider-txt">
+                      Nuestras evaluaciones preventivas, exámenes de laboratorio, asesoría en salud ocupacional y más; podrán ser monitorizados y podra visualizar los resultados de forma online.
+                    </p>
+                    <p class="slider-txt">
+                      
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              
             </div>
           </div>
         </section>
   
+        <!-- Introduccion -->
+        <section class="introduccion" id="inicio">
+          <div class="container p-100">
+         
+            
+            <div class="contenido flex">
+              <div class="col-2 p-r1">
+                <h3 class="">¡Sigue cuidando a tus colaboradores! </h3>
+                <img src="/img/site/barra.png" alt="" class="barra-colores " loading="lazy"/>
+                <p class="subtitle0 p-200x" >
+                  La seguridad y salud de los empleados es una de las muchas variables que afectan, en la actualidad, la rentabilidad de las empresas.
+                </p>
+                <p>El Centro Médico Medex ha creado una Unidad Preventiva Ocupacional que ofrece una amplia gama de servicios diseñados para ayudarle a mantener a sus empleados en el trabajo con el máximo de su potencial. Contamos con la acreditación de Servicios de Salud Ocupacional, otorgado por la Dirección General de Salud Ambiental (DIGESA) del Ministerio de Salud.</p>
+                <p>Desde exámenes médicos, pruebas y detecciones, Medex puede ayudarle en muchos aspectos de la salud de los trabajadores.</p>
+                
+                
+              </div>  
+              <div class="col-2">
+                <!--  Video -->
+                <div class="col-2 video-responsive">
+                  <video class="video" poster="/img/docMontenegro.png" preload="none" controls>
+                    <source src="video/doc.montenegro.mp4" type="video/mp4" />
+                  </video>
+                </div>
+              </div>
+              
+          </div>
+          <!-- Acordeon  -->
+          <button class="accordion button transparent serv-list" >Estos son nuestros servicios personalizados para tu empresa <i class="fas fa-chevron-down"></i></button>
+          <div class="panel">
+            <div class="contenido flex">
+              <div class="col-2">
+                <ul class="ul-detalles">
+                  <li class="li-detalles">Servicio de Vigilancia y/o Seguridad Ocupacional (Médico Ocupacional, Enfermera Ocupacional, Psicóloga Ocupacional, Prevencionista de Seguridad, Supervisor de Seguridad, etc).</li>
+                  <li class="li-detalles">Coordinación y/o lectura de exámenes médicos ocupacionales.</li>
+                  <li>Consultoría u auditoría de seguridad y salud ocupacional especializadas y personalizadas a la problemática del sistema de gestión de salud en tu empresa, teniendo en cuenta la epidemiología de tus trabajadores.</li>
+                  <li class="li-detalles">Programa Wellness (Pausas Activas, Masajes y Nutrición).</li>
+                  <li class="li-detalles">Monitoreos ergonómicos, higiene ocupacional y riesgos psicosociales.</li>
+                  <li class="li-detalles">Capacitaciones en temas de seguridad y salud ocupacional.</li>
+                </ul>
+              </div>
+  
+              <div class="col-2">
+                <ul class="ul-detalles">
+                  
+                  <li class="li-detalles">Sistemas de gestión de seguridad y salud en el trabajo.</li>
+                  <li class="li-detalles">Educación y reeducación postural.</li>
+                  <li class="li-detalles">Elaboración de la matriz de identificación de peligros y evaluación de riesgos (IPER).</li>
+                  <li class="li-detalles">Elaboración de protocolos.</li>
+                  <li class="li-detalles">Elaboración documentaria de Salud y Seguridad Ocupacional.</li>
+                  <li class="li-detalles">Evaluaciones músculo esquelética específica.</li>
+                  <li class="li-detalles">Investigación de accidentes</li>
+                  <li class="li-detalles">Elaboración de Plan Covid-19.</li>
+                  <li class="li-detalles">Inspección de botiquines y áreas de trabajo.</li>
+                  <li class="li-detalles">Gestión en personas con discapacidad.</li>
+                </ul>
+              </div>
+            </div>
+            
+          
+          </div>
+        </section>
        
 
         <!-- ¿Por qué adquirir un Plan de Salud? -->
-      <section class="porque">
+      <section class="porque" id="medico-ocupacional">
         <div class="container p-100">
           <h3 class="center">Exámenes Médicos Ocupacionales</h3>
-          <img src="/img/site/barra.png" alt="" class="barra-colores barra-center" />
+          <img src="/img/site/barra.png" alt="" class="barra-colores barra-center" loading="lazy"/>
           <p class="subtitle0 center p-200x" >
-            Evaluación médica que se realiza a los trabajadores antes de su contratación, durante su continuidad en la empresa, o al cese, con el fin de detectar a tiempo cualquier problema de salud ocasionado por el puesto de trabajo.
+            El Examen Médico Ocupacional (EMO) es una evaluación médica individualizada que toma en cuenta los peligros y riesgos de cada puesto de trabajo así como las condiciones de cada puesto de trabajo (demandas) y las características del trabajador (capacidades). Acorde a lo establecido en la normativa legal vigente, puede ser:
           </p>
           <p class="subtitle center p-200x">En el caso de los trabajadores que asumen actividades de <strong> alto riesgo</strong>, el empleador se encuentra obligado a realizar exámenes médicos ocupacionales <strong>una vez al año</strong>. Sin embargo, para los empleados que no realizan actividades consideradas de alto riesgo, las organizaciones están obligadas a realizar estas evaluaciones <strong>al menos cada dos años</strong>.</p>
 
@@ -204,8 +343,8 @@
           <!-- Inicio -->
           <div class="emo-categorias">
             <div class="categoria-card col-2">
-                <img src="/img/icons/emo/Preocupacional.svg" alt="" class="emo-categorias-icon">
-                <h5>Pre-Ocupacional</h5>
+                <img src="/img/icons/emo/Preocupacional.svg" alt="" class="emo-categorias-icon" loading="lazy">
+                <h5>EMO Ingreso</h5>
                 <p class="emo-categoria-p">Son el conjunto de Evaluaciones médicas que se realiza al trabajador antes de ser contratado en el puesto.</p>
                 
 
@@ -221,8 +360,8 @@
            
 
             <div class="categoria-card col-2">
-                <img src="/img/icons/emo/Periodico o Anual.svg" alt="" class="emo-categorias-icon">
-                <h5>Periodico o Anual</h5>
+                <img src="/img/icons/emo/Periodico o Anual.svg" alt="" class="emo-categorias-icon" loading="lazy">
+                <h5>EMO Periodico</h5>
                 <p class="emo-categoria-p">Son exámenes médicos que se realizan durante la prestación de servicios.</p>
                 
                 
@@ -234,13 +373,13 @@
             </div>
 
             <div class="categoria-card col-2">
-                <img src="/img/icons/emo/Retiro.svg" alt="" class="emo-categorias-icon">
-                <h5>Retiro</h5>
+                <img src="/img/icons/emo/Retiro.svg" alt="" class="emo-categorias-icon" loading="lazy">
+                <h5>EMO Retiro</h5>
                 <p class="emo-categoria-p">Son Evaluaciones médicas realizadas al trabajador una vez culminado su contrato laboral.</p>
                 
                  <!-- Acordeon  -->
                  <button class="accordion button transparent">Más detalles <i class="fas fa-chevron-down"></i></button>
-                 <div class="panel" style="">
+                 <div class="panel" >
                     <p class="accordion-text"><strong>Objetivo:</strong> <br> Esta evaluación debe realizarse días previos al cese laboral.
                     <br> <br>
                     Los exámenes médicos de salida son facultativos, y podrán realizarse, a solicitud del trabajador o empleador.  En el caso de trabajadores que realizan trabajos de alto riesgo, el empleador se encuentra obligado a realizar estos exámenes.</p>
@@ -248,8 +387,8 @@
 
             </div>
             <div class="categoria-card col-2">
-                <img src="/img/icons/emo/reubicación.svg" alt="" class="emo-categorias-icon">
-                <h5>Re-ubicación</h5>
+                <img src="/img/icons/emo/reubicación.svg" alt="" class="emo-categorias-icon" loading="lazy">
+                <h5>EMO de Reincorporación</h5>
                 <p class="emo-categoria-p">Exámen Ocupacional realizado a todo trabajador que es cambiado de funciones o de puesto de trabajo.</p>
             
                  <!-- Acordeon  -->
@@ -277,9 +416,10 @@
             src="/img/site/barra.png"
             alt=""
             class="barra-colores barra-center"
+            loading="lazy"
           />
           <p class="subtitle center p-200x">
-            Actividad conducida principalmente por el médico ocupacional el cual incluye procedimientos para la recogida sistemática y análisis de datos de salud de los trabajadores, principalmente relacionados con el trabajo.
+            Contamos con un staff médico altamente Capacitado brindando un servicio con los más altos estándares en vigilancia médica.
           </p>
           
           <div class="contenido flex">
@@ -290,9 +430,12 @@
                   <li><strong>¿Cómo te ayudamos?</strong>
                     <p>Medex te ayuda a integrar mediante nuestros servicios tus programas de vigilancia médica ocupacional y experimentar los beneficios de ello como:</p>
                     <ul>
-                      <li>Mejorar la calidad de vida de sus trabajadores</li>
-                      <li>La satisfacción de su personal</li>
-                      <li>Mejorar la productividad y calidad de servicio en sus productos y/o servicios.</li>
+                      <li>Elaboración del Plan y Programa de Vigilancia Médica Ocupacional.
+                      </li>
+                      <li>Registro y control de exámenes médicos.</li>
+                      <li>Actualización de matriz EMOS.</li>
+                      <li>Lectura de resultados y seguimiento a la salud de sus trabajadores.</li>
+                      <li>Soporte con médicos, psicólogos, nutricionistas, fisioterapeutas y enfermeras ocupacionales.</li>
                     </ul>
                   </li>
                 <!-- </ul>
@@ -307,7 +450,7 @@
                   </ul> -->
               </div>
               <div class="col-2 img-up">
-                  <img src="/img/images/doctor-vigilancia-medica.jpg" width="100%" alt="">
+                  <img src="/img/images/doctor-vigilancia-medica.jpg" width="100%" alt="" loading="lazy">
               </div>
           </div>
         </div>
@@ -350,7 +493,7 @@
           <h4 class="center">Covid-19 </h4>
           <img src="/img/site/barra.png" alt="" class="barra-colores barra-center" />
           <p class="subtitle center p-200x">
-            Establecer los lineamientos para la vigilancia, prevención y control de la salud de los trabajadores con riesgo de exposición a SARS-CoV-2.
+            Elaboración e implementación del plan para vigilancia, prevención y control de COVID-19, Seguimiento Médico presencial o telefónico para Covid-19.
           </p>
           <div class="contenido flex">
             <div class="col-2 center">
@@ -358,6 +501,7 @@
                 src="/img/images/covid.jpg"
                 alt=""
                 width="90%"
+                loading="lazy"
                 
               />
             </div>
@@ -381,6 +525,7 @@
             src="/img/site/barra.png"
             alt=""
             class="barra-colores barra-center"
+            loading="lazy"
           />
           <p class="subtitle center p-200x">
             El Centro Médico Medex ha creado una Unidad Preventiva Ocupacional que ofrece una amplia gama de servicios diseñados para ayudarle a mantener a sus empleados en el trabajo con el máximo de su potencial.
@@ -388,23 +533,23 @@
 
           <div class="emo-categorias">
             <div class="categoria-card col-2">
-                <img src="/img/images/servicios/Inyeccion.svg" alt="" class="emo-categorias-icon">
+                <img src="/img/images/servicios/Inyeccion.svg" alt="" class="emo-categorias-icon" loading="lazy">
                 <h5>Vacunación</h5>
-                <p class="emo-categoria-p">Forma sencilla, inocua y eficaz de protegernos contra enfermedades dañinas antes de entrar en contacto con ellas.</p>
+                <p class="emo-categoria-p">Contamos con un Centro de Vacunación Internacional contando así con una amplia selección de vacunas, realizamos  campañas de vacunación en las instalaciones del cliente</p>
                 <!-- <a href="#">
                     <button class="button transparent">Más detalles <i class="fas fa-chevron-down"></i></button>
                 </a> -->
             </div>
             <div class="categoria-card col-2">
-                <img src="/img/images/servicios/Presentacion.svg" alt="" class="emo-categorias-icon">
+                <img src="/img/images/servicios/Presentacion.svg" alt="" class="emo-categorias-icon" loading="lazy">
                 <h5>Capacitaciones</h5>
-                <p class="emo-categoria-p">Capacitaciones de acuerdo al peligro y riesgo del puesto de trabajo de la empresa.</p>
+                <p class="emo-categoria-p">Capacitaciones de acuerdo al peligro y riesgo del puesto de trabajo de la empresa. Realizamos capacitaciones constantes a solicitud del cliente.</p>
                 <!-- <a href="#">
                     <button class="button transparent">Más detalles <i class="fas fa-chevron-down"></i></button>
                 </a> -->
             </div>
             <div class="categoria-card col-2">
-                <img src="/img/images/servicios/Gimnasia.svg" alt="" class="emo-categorias-icon">
+                <img src="/img/images/servicios/Gimnasia.svg" alt="" class="emo-categorias-icon" loading="lazy">
                 <h5>Gimnasia laboral</h5>
                 <p class="emo-categoria-p">Actividades que se realizan durante la jornada laboral , a base de ejercicios de movilidad, estiramientos, tonificación muscular o ejercicios aeróbicos de baja intensidad.</p>
                 <!-- <a href="#">
@@ -412,7 +557,7 @@
                 </a> -->
             </div>
             <div class="categoria-card col-2">
-                <img src="/img/images/servicios/Gimnasia.svg" alt="" class="emo-categorias-icon">
+                <img src="/img/images/servicios/Gimnasia.svg" alt="" class="emo-categorias-icon" loading="lazy">
                 <h5>Control de Ausentismo</h5>
                 <p class="emo-categoria-p">Permite verificar la causa del ausentismo de los trabajadores en el domicilio a causa de enfermedad referida.</p>
                 <!-- <a href="#">
@@ -429,53 +574,16 @@
 
       <section class="tira-section">
         <div class="container tira-container">
-            <div class="col-4">
-                <h3>Contamos con 40 años de experiencia</h3>
+           <div class="container flex">
+              <div class="col-2">
+                <h3>Contamos con<br>40 años de experiencia</h3>
                 <p class="sub">Sientete como en casa</p>
-            </div>
-            <!-- incluye el detalle de la tira -->
-            <div class="col-6 tira-detalle">
-                <!-- 1 -->
-                <div class="col-2 tira-detalle-item">
-                    <div class="col-3">
-                        <img src="/img/icons/prueba.svg" alt="" width="40%"> 
-                    </div>
-                    <div class="col-7">
-                        <h4>+ 10,000</h4>
-                        <p>Pacientes</p>
-                    </div>
-                </div>
-                <!-- 2 -->
-                <div class="col-2 tira-detalle-item">
-                    <div class="col-3">
-                        <img src="/img/icons/prueba.svg" alt="" width="40%"> 
-                    </div>
-                    <div class="col-7">
-                        <h4>+ 50</h4>
-                        <p>Especialidades</p>
-                    </div>
-                </div>
-                <!-- 3 -->
-                <div class="col-2 tira-detalle-item">
-                    <div class="col-3">
-                        <img src="/img/icons/prueba.svg" alt="" width="40%"> 
-                    </div>
-                    <div class="col-7">
-                        <h4>+ 500 </h4>
-                        <p>Empresas Afiliadas</p>
-                    </div>
-                </div>
-                <!-- 4 -->
-                <div class="col-2 tira-detalle-item">
-                    <div class="col-3">
-                        <img src="/img/icons/prueba.svg" alt="" width="40%"> 
-                    </div>
-                    <div class="col-7">
-                        <h4>+ 200</h4>
-                        <p>Médicos</p>
-                    </div>
-                </div>
-            </div>
+              </div>
+              <!-- incluye el detalle de la tira -->
+              <div class="col-2 tira-detalle">
+                <img src="/img/images/img-tira.png  " class="img-tira" alt="" loading="lazy">
+              </div>
+           </div>
         </div>
     </section>
 
@@ -484,7 +592,7 @@
       <section class="lugares p-100" id="ubicacion">
         <div class="container">
           <h4 class="center">Lugares de Atención</h3>
-          <img src="/img/site/barra.png" alt="" class="barra-colores barra-center" />
+          <img src="/img/site/barra.png" alt="" class="barra-colores barra-center"  loading="lazy"/>
           <p class="subtitle center">
             Ubicada en el corazón del centro financiero de Lima, nuestra institución surge con el fin de ofrecer un servicio de calidad en el rubro de atención médica ambulatoria.
           </p>
@@ -494,14 +602,14 @@
                 <div class="col-3 flex contenido">
                     <div class="contacto">
                         <div class="item-list flex">
-                            <img src="https://www.iesrp.edu.pe/wp-content/uploads/2020/10/ico-place.svg" alt="">
+                            <img src="https://www.iesrp.edu.pe/wp-content/uploads/2020/10/ico-place.svg" alt="" loading="lazy">
                             <p class="contenido-texto-tit">Dirección:
                                 <br>
                                 <span class="contenido-texto-sub">San Isidro: Avenida República de Panamá 3065</span>
                             </p>
                         </div>
                         <div class="item-list flex">
-                            <img src="https://www.iesrp.edu.pe/wp-content/uploads/2020/10/ico-calendar.svg" alt="">
+                            <img src="https://www.iesrp.edu.pe/wp-content/uploads/2020/10/ico-calendar.svg" alt="" loading="lazy">
                             <p class="contenido-texto-tit">Horario de Atención:
                                 <br>
                                 <span class="contenido-texto-sub">Lunes a viernes: 7:45 am a 8:30 pm
@@ -510,11 +618,11 @@
                             </p>
                         </div>
                         <div class="item-list flex">
-                            <img src="https://www.iesrp.edu.pe/wp-content/uploads/2020/10/ico-phone.svg" alt="">
+                            <img src="https://www.iesrp.edu.pe/wp-content/uploads/2020/10/ico-phone.svg" alt="" loading="lazy">
                             <p class="contenido-texto-tit">Teléfonos:
                                 <br>
                                 <span class="contenido-texto-sub">(01) 319-1530<br>
-                                +51 994 025 131</span>
+                                +51 977 580 362</span>
                             </p>
                         </div>
                     </div>
@@ -536,7 +644,7 @@
       <section class="preguntas p-100">
         <div class="container">
           <h4 class="center">Preguntas frecuentes</h4>
-          <img src="/img/site/barra.png" alt="" class="barra-colores barra-center" />
+          <img src="/img/site/barra.png" alt="" class="barra-colores barra-center" loading="lazy" />
           <p class="subtitle center" >
             Encuentre las respuestas a las preguntas más frecuentes sobre salud ocupacional. Si la respuesta a su duda no se encuentra, no dude en comunicarse con nosotros.
           </p>
@@ -671,7 +779,7 @@
         <p class="flex">
           <i class="fab fa-whatsapp" style="font-size: 22px"> </i>
           WhatsApp<br>
-          +51 994 025 131
+          +51 977 580 362
         </p>
       </div>
 
@@ -722,7 +830,7 @@
         
         <div>
           <h5 style="font-size: 18px;    padding-top: 20px; ">Acreditados por:</h5> 
-          <img src="/img/images/footer/digesa.png" alt="">
+          <img src="/img/images/footer/digesa.png" alt="" loading="lazy">
         </div>
       </div>
 
@@ -740,12 +848,13 @@
 
     <!-- Botones flotantes  -->
     <div class="btn-fixed">
-        <a href="https://api.whatsapp.com/send?phone=51994025131&text=Estoy%20interesado%20en%20salud%20ocupacional" target="”_blank”">
+        <a href="https://api.whatsapp.com/send?phone=51977580362&text=Estoy%20interesado%20en%20salud%20ocupacional" target="”_blank”">
           <div class="container-ico-flotante latidos" id="button-p">
             <img
               src="/img/icons/flotantes/WhatsApp.svg"
               alt="icono de WhatsApp"
               class="ico-whatsapp"
+              loading="lazy"
             />
           </div>
         </a>
@@ -759,6 +868,7 @@
               src="/img/icons/flotantes/Messenger.svg"
               alt="Icono de Messenger"
               class="ico-whatsapp"
+              loading="lazy"
             />
           </div>
         </a>
